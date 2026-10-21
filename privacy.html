@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Ibrahim VPS Backup, a private Google Drive encrypted backup application.">
+  <title>Privacy Policy — Ibrahim VPS Backup</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    *{box-sizing:border-box}
+    body{margin:0;background:#10131e;color:#f1f5fb;line-height:1.65}
+    main{max-width:760px;margin:5vh auto;padding:26px}
+    h1{font-size:clamp(2rem,6vw,2.8rem)}
+    h2{margin-top:32px;font-size:1.25rem}
+    p,li{color:#c7d0df}
+    a{color:#a5b8ff}
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Home</a></p>
+  <h1>Privacy Policy</h1>
+  <p><strong>Ibrahim VPS Backup</strong> — Effective October 21, 2026.</p>
+  <p>This is a private, single-user application operated by its owner to back up VPS data to the same owner's Google Drive. It is not a hosted backup service for third-party customers.</p>
+  <h2>Google data accessed</h2>
+  <p>The application requests Google Drive file-level authorization (the <code>drive.file</code> scope) to create, locate, check, download for restoration, and manage encrypted backup files created or explicitly selected through the application. It does not request access to Gmail, contacts, or unrelated files.</p>
+  <h2>How data is used</h2>
+  <p>Backups are generated from the owner's VPS and encrypted locally by restic before uploading through rclone. Google Drive is used as encrypted file storage only. The tool may read its own encrypted backup files to verify and restore backups when requested.</p>
+  <h2>Storage and protection</h2>
+  <p>When configured, OAuth authorization tokens and encryption credentials are maintained in restricted-access configuration files on the owner's VPS and are not included in this public website or repository. Backup contents are encrypted with a separate restic password before transmission to Google Drive. The owner is responsible for securely retaining the recovery password.</p>
+  <h2>Sharing and transfers</h2>
+  <p>The application does not sell data, use it for advertising, or share it with third-party data brokers. Encrypted backup objects are stored in the owner's Google Drive through Google's services. This website contains no backup data and does not itself request Google authentication.</p>
+  <h2>Retention and deletion</h2>
+  <p>Backup retention is controlled by the owner. Encrypted files can be deleted from Google Drive by the owner. Revoking the app's access prevents further access, but does not automatically delete previously uploaded backups.</p>
+  <h2>Revoking access</h2>
+  <p>The owner may revoke this application's authorization in Google Account → Security → Third-party connections. The local configuration can then be deleted to disconnect the VPS.</p>
+  <h2>Updates and contact</h2>
+  <p>This policy will be updated if the tool's permissions or data practices change. Questions or privacy requests may be submitted through the maintainer's <a href="https://github.com/eaalenezi42-ctrl/ibrahim-vps-backup-site/issues">GitHub issue tracker</a>. Do not post sensitive credentials, logs, or backup files in public issues.</p>
+</main>
+</body>
+</html>

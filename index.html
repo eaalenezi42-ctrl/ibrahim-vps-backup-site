@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ibrahim VPS Backup: a private, owner-operated encrypted backup integration for Google Drive.">
+  <title>Ibrahim VPS Backup — Personal Encrypted Backups</title>
+  <style>
+    :root{color-scheme:dark; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    *{box-sizing:border-box}
+    body{margin:0;background:#10131e;color:#f1f5fb;line-height:1.65}
+    main{max-width:720px;margin:9vh auto;padding:26px}
+    .tag{display:inline-block;background:#263e39;color:#b4f6d4;padding:5px 12px;border-radius:999px;font-size:0.85rem}
+    h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;margin:22px 0}
+    p{color:#c7d0df}
+    .panel{background:#1b2232;border:1px solid #303e55;border-radius:16px;padding:22px;margin:28px 0}
+    a{color:#a5b8ff}
+    footer{padding-top:25px;border-top:1px solid #354054;font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">Private, single-user utility</span>
+    <h1>Ibrahim VPS Backup</h1>
+    <p>A personal backup integration that securely stores encrypted copies of the owner's VPS data in the owner's Google Drive account.</p>
+    <section class="panel">
+      <h2>What it does</h2>
+      <p>The application uses rclone to connect to Google Drive and restic to encrypt backup contents before upload. It is intended solely for the owner's disaster recovery and is not offered as a public service.</p>
+      <p>Only Google Drive files created or explicitly made available to this application are needed. It does not access Gmail, contacts, or unrelated Google account data.</p>
+    </section>
+    <p>Read our <a href="privacy.html">Privacy Policy</a> for details on permissions, security, retention, and revoking access.</p>
+    <footer>Independent personal project. Not affiliated with Google, GitHub, Hostinger, or the rclone/restic projects. Contact the maintainer via the repository's <a href="https://github.com/eaalenezi42-ctrl/ibrahim-vps-backup-site/issues">issue tracker</a>.</footer>
+  </main>
+</body>
+</html>
